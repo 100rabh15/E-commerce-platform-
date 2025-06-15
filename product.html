@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to products</a>
+
+    <div id="product-detail" class="product-detail"></div>
+
+    <section class="reviews-section">
+        <h2>Reviews</h2>
+        <ul id="reviews-list"></ul>
+
+        <h3>Add a Review</h3>
+        <form id="review-form">
+            <input type="text" id="reviewer-name" placeholder="Your name" required />
+            <select id="review-rating" required>
+                <option value="">Rating</option>
+                <option value="1">1 ★</option>
+                <option value="2">2 ★★</option>
+                <option value="3">3 ★★★</option>
+                <option value="4">4 ★★★★</option>
+                <option value="5">5 ★★★★★</option>
+            </select>
+            <textarea id="review-comment" rows="3" placeholder="Comment" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="product.js"></script>
+</body>
+</html>

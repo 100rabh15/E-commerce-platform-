@@ -1,0 +1,52 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f9fafb; color: #333; }
+header { background: #4f46e5; padding: 20px; color: #fff; }
+header h1 { margin-bottom: 10px; }
+.search-filter { display: flex; gap: 10px; flex-wrap: wrap; }
+.search-filter input, .search-filter select, .search-filter button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.search-filter button { background: #6366f1; color: #fff; border: none; cursor: pointer; }
+.search-filter button:hover { background: #4c51bf; }
+
+.product-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 20px;
+}
+.product-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.product-card img { width: 100%; height: 160px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; }
+.product-card h3 { font-size: 1rem; margin-bottom: 5px; }
+.product-card p { margin-bottom: 10px; }
+.price { font-weight: bold; color: #111; }
+
+.back-link { display: inline-block; margin: 20px; color: #4f46e5; text-decoration: none; }
+.product-detail { padding: 20px; display: flex; gap: 40px; flex-wrap: wrap; }
+.product-detail img { width: 300px; border: 1px solid #e5e7eb; border-radius: 6px; }
+.product-info { max-width: 500px; }
+.product-info h2 { margin-bottom: 10px; }
+.reviews-section { padding: 20px; }
+#reviews-list { list-style: none; margin-bottom: 20px; }
+#reviews-list li { padding: 10px; border-bottom: 1px solid #e5e7eb; }
+#review-form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; }
+#review-form input, #review-form select, #review-form textarea, #review-form button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#review-form button { background: #4f46e5; color: #fff; border: none; cursor: pointer; }
+#review-form button:hover { background: #4338ca; }
